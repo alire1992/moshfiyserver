@@ -185,3 +185,69 @@ a {
   justify-content: center;
   width: 64px;
 }
+
+/* Buttons */
+.button {
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button--block {
+  display: inline-block;
+  width: 100%;
+}
+
+.button--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.button--primary:hover {
+  background-color: #3a8ffd;
+}
+
+.button--secondary {
+  background-color: var(--color-secondary);
+  color: #fff;
+}
+
+.button--secondary:hover {
+  background-color: #00c8eb;
+}
+
+.button--accent {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+
+.button--accent:hover {
+  background-color: #ec3000;
+}
+
+.button--outline {
+  border: 2px solid var(--color-headings);
+  background-color: #fff;
+  color: var(--color-headings);
+}
+
+.button--outline:hover {
+  background-color: var(--color-headings);
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
+  }
+}
