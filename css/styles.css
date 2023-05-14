@@ -4,6 +4,8 @@
   --color-accent: #ff3400;
   --color-headings: #210e6b;
   --color-body: #918ca4;
+  --color-border: #ccc;
+  --border-raduis: 30px;
 }
 
 *,
@@ -198,6 +200,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
+  outline: 0;
   padding: 2rem 3rem;
   text-align: center;
   text-transform: uppercase;
@@ -248,6 +251,50 @@ a {
 
 @media screen and (min-width: 1024px) {
   .button {
+    font-size: 1.5rem;
+  }
+}
+
+/* Inputs */
+.input {
+  border: 1px solid var(--color-border);
+  color: var(--color-headings);
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+  -webkit-border-radius: var(--border-raduis);
+  -moz-border-radius: var(--border-raduis);
+  -ms-border-radius: var(--border-raduis);
+  -o-border-radius: var(--border-raduis);
+  border-radius: var(--border-raduis);
+  font-size: 2rem;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+.input-group {
+  border: 1px solid var(--color-border);
+  -webkit-border-radius: var(--border-raduis);
+  -moz-border-radius: var(--border-raduis);
+  -ms-border-radius: var(--border-raduis);
+  -o-border-radius: var(--border-raduis);
+  border-radius: var(--border-raduis);
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+
+.input-group .button {
+  margin: 4px;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
     font-size: 1.5rem;
   }
 }
