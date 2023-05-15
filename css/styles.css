@@ -396,3 +396,29 @@ a {
     font-size: 1.7rem;
   }
 }
+
+/* Medai */
+.media {
+  display: flex;
+}
+
+.media__image {
+  margin-top: 1rem;
+}
+
+.media__body {
+  margin: 0 2rem;
+  font-size: 2rem;
+}
+
+.media__title {
+  margin-top: 0;
+  font-size: 2.4rem;
+}
+
+@media screen and (min-width: 1024) {
+  .media__body,
+  .media__title {
+    font-size: 1.8rem;
+  }
+}
