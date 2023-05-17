@@ -355,6 +355,15 @@ a {
   color: #fff;
 }
 
+.card--primary .button--outline {
+  background-color: var(--color-headings);
+  color: #fff;
+}
+
+.card--primary .button--outline:hover {
+  background-color: #1b0b5a;
+}
+
 .card--secondary .card__header {
   background-color: var(--color-secondary);
   color: #fff;
@@ -369,6 +378,14 @@ a {
 }
 
 /* Plans */
+.plan {
+  -webkit-transition: transform 0.4s ease-out;
+  -moz-transition: transform 0.4s ease-out;
+  -ms-transition: transform 0.4s ease-out;
+  -o-transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+}
+
 .plan__name {
   color: #fff;
   font-size: 2.4rem;
@@ -399,6 +416,14 @@ a {
   margin-bottom: 2rem;
 }
 
+.plan--popular {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 .plan--popular .card__header {
   position: relative;
 }
@@ -410,6 +435,22 @@ a {
   position: absolute;
   top: -6px;
   right: 5%;
+}
+
+.plan:hover {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 @media screen and (min-width: 1024px) {
@@ -430,7 +471,7 @@ a {
   }
 }
 
-/* Medai */
+/* Media */
 .media {
   display: flex;
 }
@@ -805,4 +846,14 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     font-size: 1.7rem;
   }
+}
+
+/* Plans Block */
+.block-plan .grid {
+  gap: 8rem 4rem;
+}
+
+.block-plan .card {
+  max-width: 50rem;
+  margin: 0 auto;
 }
